@@ -1,0 +1,10 @@
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\bin\Debug\CharacterSheet.exe.config
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\bin\Debug\CharacterSheet.exe
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\bin\Debug\CharacterSheet.pdb
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.csprojAssemblyReference.cache
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.Properties.Resources.resources
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.csproj.GenerateResource.cache
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.csproj.CoreCompileInputs.cache
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.exe
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.pdb
+C:\Users\ddurand\source\repos\CharacterSheet\CharacterSheet\obj\Debug\CharacterSheet.FormCaracterSheet.resources
