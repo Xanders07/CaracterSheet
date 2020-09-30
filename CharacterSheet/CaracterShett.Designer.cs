@@ -42,10 +42,17 @@
             this.MCInput = new System.Windows.Forms.NumericUpDown();
             this.NiveauInput = new System.Windows.Forms.NumericUpDown();
             this.ImageImportButton = new System.Windows.Forms.Button();
+            this.DonsTextBox = new System.Windows.Forms.RichTextBox();
+            this.DonsContainer = new System.Windows.Forms.SplitContainer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageCaracter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DonsContainer)).BeginInit();
+            this.DonsContainer.Panel1.SuspendLayout();
+            this.DonsContainer.Panel2.SuspendLayout();
+            this.DonsContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageCaracter
@@ -163,11 +170,53 @@
             this.ImageImportButton.UseVisualStyleBackColor = true;
             this.ImageImportButton.Click += new System.EventHandler(this.ImageImportButton_Click);
             // 
+            // DonsTextBox
+            // 
+            this.DonsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DonsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DonsTextBox.Location = new System.Drawing.Point(0, 0);
+            this.DonsTextBox.Name = "DonsTextBox";
+            this.DonsTextBox.Size = new System.Drawing.Size(278, 84);
+            this.DonsTextBox.TabIndex = 17;
+            this.DonsTextBox.Text = "";
+            // 
+            // DonsContainer
+            // 
+            this.DonsContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DonsContainer.Location = new System.Drawing.Point(66, 158);
+            this.DonsContainer.Name = "DonsContainer";
+            this.DonsContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // DonsContainer.Panel1
+            // 
+            this.DonsContainer.Panel1.Controls.Add(this.textBox1);
+            this.DonsContainer.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // DonsContainer.Panel2
+            // 
+            this.DonsContainer.Panel2.Controls.Add(this.DonsTextBox);
+            this.DonsContainer.Size = new System.Drawing.Size(280, 120);
+            this.DonsContainer.SplitterDistance = 28;
+            this.DonsContainer.SplitterWidth = 6;
+            this.DonsContainer.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(0, -1);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(279, 30);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.Text = "Dons";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FormCaracterSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(675, 363);
+            this.Controls.Add(this.DonsContainer);
             this.Controls.Add(this.ImageImportButton);
             this.Controls.Add(this.NiveauInput);
             this.Controls.Add(this.MCInput);
@@ -187,6 +236,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).EndInit();
+            this.DonsContainer.Panel1.ResumeLayout(false);
+            this.DonsContainer.Panel1.PerformLayout();
+            this.DonsContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DonsContainer)).EndInit();
+            this.DonsContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +262,9 @@
         private System.Windows.Forms.NumericUpDown MCInput;
         private System.Windows.Forms.NumericUpDown NiveauInput;
         private System.Windows.Forms.Button ImageImportButton;
+        private System.Windows.Forms.RichTextBox DonsTextBox;
+        private System.Windows.Forms.SplitContainer DonsContainer;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
