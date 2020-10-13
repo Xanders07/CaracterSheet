@@ -42,60 +42,59 @@
             this.MCInput = new System.Windows.Forms.NumericUpDown();
             this.NiveauInput = new System.Windows.Forms.NumericUpDown();
             this.ImageImportButton = new System.Windows.Forms.Button();
-            this.DonsTextBox = new System.Windows.Forms.RichTextBox();
-            this.DonsContainer = new System.Windows.Forms.SplitContainer();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dons = new System.Windows.Forms.TextBox();
+            this.panelDons = new System.Windows.Forms.Panel();
+            this.panelSorts = new System.Windows.Forms.Panel();
+            this.sort = new System.Windows.Forms.TextBox();
+            this.addDons = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageCaracter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DonsContainer)).BeginInit();
-            this.DonsContainer.Panel1.SuspendLayout();
-            this.DonsContainer.Panel2.SuspendLayout();
-            this.DonsContainer.SuspendLayout();
+            this.panelDons.SuspendLayout();
+            this.panelSorts.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageCaracter
             // 
             this.imageCaracter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imageCaracter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imageCaracter.Location = new System.Drawing.Point(12, 12);
+            this.imageCaracter.Location = new System.Drawing.Point(17, 12);
             this.imageCaracter.Name = "imageCaracter";
-            this.imageCaracter.Size = new System.Drawing.Size(170, 94);
+            this.imageCaracter.Size = new System.Drawing.Size(215, 147);
             this.imageCaracter.TabIndex = 0;
             this.imageCaracter.TabStop = false;
             // 
             // PrenomInput
             // 
             this.PrenomInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PrenomInput.Location = new System.Drawing.Point(206, 32);
-            this.PrenomInput.MaximumSize = new System.Drawing.Size(206, 32);
+            this.PrenomInput.Location = new System.Drawing.Point(238, 38);
             this.PrenomInput.MaxLength = 1000;
             this.PrenomInput.Name = "PrenomInput";
-            this.PrenomInput.Size = new System.Drawing.Size(140, 22);
+            this.PrenomInput.Size = new System.Drawing.Size(243, 22);
             this.PrenomInput.TabIndex = 1;
             // 
             // NomInput
             // 
             this.NomInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NomInput.Location = new System.Drawing.Point(352, 32);
+            this.NomInput.Location = new System.Drawing.Point(487, 38);
             this.NomInput.Name = "NomInput";
-            this.NomInput.Size = new System.Drawing.Size(140, 22);
+            this.NomInput.Size = new System.Drawing.Size(243, 22);
             this.NomInput.TabIndex = 2;
             // 
             // ClasseInput
             // 
             this.ClasseInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ClasseInput.Location = new System.Drawing.Point(498, 32);
+            this.ClasseInput.Location = new System.Drawing.Point(736, 38);
             this.ClasseInput.Name = "ClasseInput";
-            this.ClasseInput.Size = new System.Drawing.Size(140, 22);
+            this.ClasseInput.Size = new System.Drawing.Size(246, 22);
             this.ClasseInput.TabIndex = 3;
             // 
             // PrenomLabel
             // 
             this.PrenomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PrenomLabel.AutoSize = true;
-            this.PrenomLabel.Location = new System.Drawing.Point(203, 12);
+            this.PrenomLabel.Location = new System.Drawing.Point(336, 18);
             this.PrenomLabel.Name = "PrenomLabel";
             this.PrenomLabel.Size = new System.Drawing.Size(57, 17);
             this.PrenomLabel.TabIndex = 7;
@@ -105,7 +104,7 @@
             // 
             this.PVLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVLabel.AutoSize = true;
-            this.PVLabel.Location = new System.Drawing.Point(203, 64);
+            this.PVLabel.Location = new System.Drawing.Point(349, 82);
             this.PVLabel.Name = "PVLabel";
             this.PVLabel.Size = new System.Drawing.Size(26, 17);
             this.PVLabel.TabIndex = 8;
@@ -115,7 +114,7 @@
             // 
             this.MCLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MCLabel.AutoSize = true;
-            this.MCLabel.Location = new System.Drawing.Point(349, 64);
+            this.MCLabel.Location = new System.Drawing.Point(592, 82);
             this.MCLabel.Name = "MCLabel";
             this.MCLabel.Size = new System.Drawing.Size(28, 17);
             this.MCLabel.TabIndex = 9;
@@ -125,7 +124,7 @@
             // 
             this.NomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NomLabel.AutoSize = true;
-            this.NomLabel.Location = new System.Drawing.Point(349, 12);
+            this.NomLabel.Location = new System.Drawing.Point(592, 18);
             this.NomLabel.Name = "NomLabel";
             this.NomLabel.Size = new System.Drawing.Size(37, 17);
             this.NomLabel.TabIndex = 10;
@@ -135,7 +134,7 @@
             // 
             this.NiveauLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NiveauLabel.AutoSize = true;
-            this.NiveauLabel.Location = new System.Drawing.Point(495, 64);
+            this.NiveauLabel.Location = new System.Drawing.Point(839, 82);
             this.NiveauLabel.Name = "NiveauLabel";
             this.NiveauLabel.Size = new System.Drawing.Size(52, 17);
             this.NiveauLabel.TabIndex = 11;
@@ -145,7 +144,7 @@
             // 
             this.ClasseLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ClasseLabel.AutoSize = true;
-            this.ClasseLabel.Location = new System.Drawing.Point(495, 12);
+            this.ClasseLabel.Location = new System.Drawing.Point(841, 18);
             this.ClasseLabel.Name = "ClasseLabel";
             this.ClasseLabel.Size = new System.Drawing.Size(50, 17);
             this.ClasseLabel.TabIndex = 12;
@@ -154,93 +153,110 @@
             // PvInput
             // 
             this.PvInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PvInput.Location = new System.Drawing.Point(206, 84);
+            this.PvInput.Location = new System.Drawing.Point(241, 102);
             this.PvInput.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.PvInput.Name = "PvInput";
-            this.PvInput.Size = new System.Drawing.Size(140, 22);
+            this.PvInput.Size = new System.Drawing.Size(240, 22);
             this.PvInput.TabIndex = 13;
             // 
             // MCInput
             // 
             this.MCInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MCInput.Location = new System.Drawing.Point(352, 84);
+            this.MCInput.Location = new System.Drawing.Point(487, 102);
             this.MCInput.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.MCInput.Name = "MCInput";
-            this.MCInput.Size = new System.Drawing.Size(140, 22);
+            this.MCInput.Size = new System.Drawing.Size(243, 22);
             this.MCInput.TabIndex = 14;
             // 
             // NiveauInput
             // 
             this.NiveauInput.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NiveauInput.Location = new System.Drawing.Point(498, 84);
+            this.NiveauInput.Location = new System.Drawing.Point(736, 102);
             this.NiveauInput.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.NiveauInput.Name = "NiveauInput";
-            this.NiveauInput.Size = new System.Drawing.Size(140, 22);
+            this.NiveauInput.Size = new System.Drawing.Size(246, 22);
             this.NiveauInput.TabIndex = 15;
             // 
             // ImageImportButton
             // 
             this.ImageImportButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ImageImportButton.Location = new System.Drawing.Point(12, 112);
+            this.ImageImportButton.Location = new System.Drawing.Point(17, 165);
             this.ImageImportButton.Name = "ImageImportButton";
-            this.ImageImportButton.Size = new System.Drawing.Size(170, 27);
+            this.ImageImportButton.Size = new System.Drawing.Size(215, 27);
             this.ImageImportButton.TabIndex = 16;
             this.ImageImportButton.Text = "Import";
             this.ImageImportButton.UseVisualStyleBackColor = true;
             this.ImageImportButton.Click += new System.EventHandler(this.ImageImportButton_Click);
             // 
-            // DonsTextBox
+            // dons
             // 
-            this.DonsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DonsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DonsTextBox.Location = new System.Drawing.Point(0, 0);
-            this.DonsTextBox.Name = "DonsTextBox";
-            this.DonsTextBox.Size = new System.Drawing.Size(278, 130);
-            this.DonsTextBox.TabIndex = 17;
-            this.DonsTextBox.Text = "";
+            this.dons.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dons.Location = new System.Drawing.Point(-1, -1);
+            this.dons.Name = "dons";
+            this.dons.ReadOnly = true;
+            this.dons.Size = new System.Drawing.Size(492, 30);
+            this.dons.TabIndex = 21;
+            this.dons.Text = "Dons";
+            this.dons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // DonsContainer
+            // panelDons
             // 
-            this.DonsContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DonsContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DonsContainer.Location = new System.Drawing.Point(12, 166);
-            this.DonsContainer.Name = "DonsContainer";
-            this.DonsContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.panelDons.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelDons.BackColor = System.Drawing.SystemColors.Window;
+            this.panelDons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDons.Controls.Add(this.addDons);
+            this.panelDons.Controls.Add(this.dons);
+            this.panelDons.Location = new System.Drawing.Point(12, 223);
+            this.panelDons.Name = "panelDons";
+            this.panelDons.Size = new System.Drawing.Size(492, 170);
+            this.panelDons.TabIndex = 20;
             // 
-            // DonsContainer.Panel1
+            // panelSorts
             // 
-            this.DonsContainer.Panel1.Controls.Add(this.textBox1);
-            this.DonsContainer.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelSorts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelSorts.BackColor = System.Drawing.SystemColors.Window;
+            this.panelSorts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSorts.Controls.Add(this.sort);
+            this.panelSorts.Location = new System.Drawing.Point(515, 223);
+            this.panelSorts.Name = "panelSorts";
+            this.panelSorts.Size = new System.Drawing.Size(492, 170);
+            this.panelSorts.TabIndex = 22;
             // 
-            // DonsContainer.Panel2
+            // sort
             // 
-            this.DonsContainer.Panel2.Controls.Add(this.DonsTextBox);
-            this.DonsContainer.Size = new System.Drawing.Size(280, 168);
-            this.DonsContainer.SplitterDistance = 30;
-            this.DonsContainer.SplitterWidth = 6;
-            this.DonsContainer.TabIndex = 18;
+            this.sort.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sort.Location = new System.Drawing.Point(-1, -1);
+            this.sort.Name = "sort";
+            this.sort.ReadOnly = true;
+            this.sort.Size = new System.Drawing.Size(492, 30);
+            this.sort.TabIndex = 21;
+            this.sort.Text = "Sorts";
+            this.sort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // addDons
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(0, -1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 30);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.Text = "Dons";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.addDons.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addDons.Location = new System.Drawing.Point(450, 35);
+            this.addDons.Name = "addDons";
+            this.addDons.Size = new System.Drawing.Size(37, 37);
+            this.addDons.TabIndex = 22;
+            this.addDons.Text = "+";
+            this.addDons.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.addDons.UseVisualStyleBackColor = true;
             // 
             // FormCaracterSheet
             // 
@@ -248,8 +264,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(675, 363);
-            this.Controls.Add(this.DonsContainer);
+            this.ClientSize = new System.Drawing.Size(1020, 449);
+            this.Controls.Add(this.panelSorts);
+            this.Controls.Add(this.panelDons);
             this.Controls.Add(this.ImageImportButton);
             this.Controls.Add(this.NiveauInput);
             this.Controls.Add(this.MCInput);
@@ -270,11 +287,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).EndInit();
-            this.DonsContainer.Panel1.ResumeLayout(false);
-            this.DonsContainer.Panel1.PerformLayout();
-            this.DonsContainer.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DonsContainer)).EndInit();
-            this.DonsContainer.ResumeLayout(false);
+            this.panelDons.ResumeLayout(false);
+            this.panelDons.PerformLayout();
+            this.panelSorts.ResumeLayout(false);
+            this.panelSorts.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,9 +312,11 @@
         private System.Windows.Forms.NumericUpDown MCInput;
         private System.Windows.Forms.NumericUpDown NiveauInput;
         private System.Windows.Forms.Button ImageImportButton;
-        private System.Windows.Forms.RichTextBox DonsTextBox;
-        private System.Windows.Forms.SplitContainer DonsContainer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox dons;
+        private System.Windows.Forms.Panel panelDons;
+        private System.Windows.Forms.Panel panelSorts;
+        private System.Windows.Forms.TextBox sort;
+        private System.Windows.Forms.Button addDons;
     }
 }
 
