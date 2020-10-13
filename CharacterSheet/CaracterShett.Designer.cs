@@ -57,6 +57,7 @@
             // 
             // imageCaracter
             // 
+            this.imageCaracter.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imageCaracter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imageCaracter.Location = new System.Drawing.Point(12, 12);
             this.imageCaracter.Name = "imageCaracter";
@@ -66,13 +67,17 @@
             // 
             // PrenomInput
             // 
+            this.PrenomInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PrenomInput.Location = new System.Drawing.Point(206, 32);
+            this.PrenomInput.MaximumSize = new System.Drawing.Size(206, 32);
+            this.PrenomInput.MaxLength = 1000;
             this.PrenomInput.Name = "PrenomInput";
             this.PrenomInput.Size = new System.Drawing.Size(140, 22);
             this.PrenomInput.TabIndex = 1;
             // 
             // NomInput
             // 
+            this.NomInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NomInput.Location = new System.Drawing.Point(352, 32);
             this.NomInput.Name = "NomInput";
             this.NomInput.Size = new System.Drawing.Size(140, 22);
@@ -80,6 +85,7 @@
             // 
             // ClasseInput
             // 
+            this.ClasseInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ClasseInput.Location = new System.Drawing.Point(498, 32);
             this.ClasseInput.Name = "ClasseInput";
             this.ClasseInput.Size = new System.Drawing.Size(140, 22);
@@ -87,6 +93,7 @@
             // 
             // PrenomLabel
             // 
+            this.PrenomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PrenomLabel.AutoSize = true;
             this.PrenomLabel.Location = new System.Drawing.Point(203, 12);
             this.PrenomLabel.Name = "PrenomLabel";
@@ -96,6 +103,7 @@
             // 
             // PVLabel
             // 
+            this.PVLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVLabel.AutoSize = true;
             this.PVLabel.Location = new System.Drawing.Point(203, 64);
             this.PVLabel.Name = "PVLabel";
@@ -105,6 +113,7 @@
             // 
             // MCLabel
             // 
+            this.MCLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MCLabel.AutoSize = true;
             this.MCLabel.Location = new System.Drawing.Point(349, 64);
             this.MCLabel.Name = "MCLabel";
@@ -114,6 +123,7 @@
             // 
             // NomLabel
             // 
+            this.NomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NomLabel.AutoSize = true;
             this.NomLabel.Location = new System.Drawing.Point(349, 12);
             this.NomLabel.Name = "NomLabel";
@@ -123,6 +133,7 @@
             // 
             // NiveauLabel
             // 
+            this.NiveauLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NiveauLabel.AutoSize = true;
             this.NiveauLabel.Location = new System.Drawing.Point(495, 64);
             this.NiveauLabel.Name = "NiveauLabel";
@@ -132,6 +143,7 @@
             // 
             // ClasseLabel
             // 
+            this.ClasseLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ClasseLabel.AutoSize = true;
             this.ClasseLabel.Location = new System.Drawing.Point(495, 12);
             this.ClasseLabel.Name = "ClasseLabel";
@@ -141,27 +153,46 @@
             // 
             // PvInput
             // 
+            this.PvInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PvInput.Location = new System.Drawing.Point(206, 84);
+            this.PvInput.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.PvInput.Name = "PvInput";
             this.PvInput.Size = new System.Drawing.Size(140, 22);
             this.PvInput.TabIndex = 13;
             // 
             // MCInput
             // 
+            this.MCInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MCInput.Location = new System.Drawing.Point(352, 84);
+            this.MCInput.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.MCInput.Name = "MCInput";
             this.MCInput.Size = new System.Drawing.Size(140, 22);
             this.MCInput.TabIndex = 14;
             // 
             // NiveauInput
             // 
+            this.NiveauInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NiveauInput.Location = new System.Drawing.Point(498, 84);
+            this.NiveauInput.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.NiveauInput.Name = "NiveauInput";
             this.NiveauInput.Size = new System.Drawing.Size(140, 22);
             this.NiveauInput.TabIndex = 15;
             // 
             // ImageImportButton
             // 
+            this.ImageImportButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImageImportButton.Location = new System.Drawing.Point(12, 112);
             this.ImageImportButton.Name = "ImageImportButton";
             this.ImageImportButton.Size = new System.Drawing.Size(170, 27);
@@ -176,14 +207,15 @@
             this.DonsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DonsTextBox.Location = new System.Drawing.Point(0, 0);
             this.DonsTextBox.Name = "DonsTextBox";
-            this.DonsTextBox.Size = new System.Drawing.Size(278, 84);
+            this.DonsTextBox.Size = new System.Drawing.Size(278, 130);
             this.DonsTextBox.TabIndex = 17;
             this.DonsTextBox.Text = "";
             // 
             // DonsContainer
             // 
+            this.DonsContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DonsContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DonsContainer.Location = new System.Drawing.Point(66, 158);
+            this.DonsContainer.Location = new System.Drawing.Point(12, 166);
             this.DonsContainer.Name = "DonsContainer";
             this.DonsContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -195,8 +227,8 @@
             // DonsContainer.Panel2
             // 
             this.DonsContainer.Panel2.Controls.Add(this.DonsTextBox);
-            this.DonsContainer.Size = new System.Drawing.Size(280, 120);
-            this.DonsContainer.SplitterDistance = 28;
+            this.DonsContainer.Size = new System.Drawing.Size(280, 168);
+            this.DonsContainer.SplitterDistance = 30;
             this.DonsContainer.SplitterWidth = 6;
             this.DonsContainer.TabIndex = 18;
             // 
@@ -214,6 +246,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(675, 363);
             this.Controls.Add(this.DonsContainer);
@@ -232,6 +265,7 @@
             this.Controls.Add(this.PrenomInput);
             this.Controls.Add(this.imageCaracter);
             this.Name = "FormCaracterSheet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.imageCaracter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).EndInit();
