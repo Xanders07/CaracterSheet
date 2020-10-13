@@ -46,5 +46,10 @@ namespace CharacterSheet
         {
             return (Image)(new Bitmap(imgToResize, size));
         }
+
+        private void DonsAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

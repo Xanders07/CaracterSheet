@@ -42,21 +42,21 @@
             this.MCInput = new System.Windows.Forms.NumericUpDown();
             this.NiveauInput = new System.Windows.Forms.NumericUpDown();
             this.ImageImportButton = new System.Windows.Forms.Button();
-            this.dons = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ArrayDons = new System.Windows.Forms.TableLayoutPanel();
+            this.CoutLabel = new System.Windows.Forms.Label();
+            this.ActionLabel = new System.Windows.Forms.Label();
+            this.EffetLabel = new System.Windows.Forms.Label();
+            this.DonsLabel = new System.Windows.Forms.Label();
+            this.CoutInput = new System.Windows.Forms.RichTextBox();
+            this.ActionInput = new System.Windows.Forms.RichTextBox();
+            this.NomDonsInput = new System.Windows.Forms.RichTextBox();
+            this.EffetInput = new System.Windows.Forms.RichTextBox();
+            this.DonsAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imageCaracter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.ArrayDons.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageCaracter
@@ -78,6 +78,7 @@
             this.PrenomInput.Name = "PrenomInput";
             this.PrenomInput.Size = new System.Drawing.Size(297, 30);
             this.PrenomInput.TabIndex = 1;
+            this.PrenomInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NomInput
             // 
@@ -87,6 +88,7 @@
             this.NomInput.Name = "NomInput";
             this.NomInput.Size = new System.Drawing.Size(297, 30);
             this.NomInput.TabIndex = 2;
+            this.NomInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ClasseInput
             // 
@@ -96,6 +98,7 @@
             this.ClasseInput.Name = "ClasseInput";
             this.ClasseInput.Size = new System.Drawing.Size(297, 30);
             this.ClasseInput.TabIndex = 3;
+            this.ClasseInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PrenomLabel
             // 
@@ -113,7 +116,7 @@
             this.PVLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVLabel.AutoSize = true;
             this.PVLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PVLabel.Location = new System.Drawing.Point(463, 91);
+            this.PVLabel.Location = new System.Drawing.Point(471, 91);
             this.PVLabel.Name = "PVLabel";
             this.PVLabel.Size = new System.Drawing.Size(39, 25);
             this.PVLabel.TabIndex = 8;
@@ -124,7 +127,7 @@
             this.MCLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MCLabel.AutoSize = true;
             this.MCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MCLabel.Location = new System.Drawing.Point(773, 91);
+            this.MCLabel.Location = new System.Drawing.Point(780, 91);
             this.MCLabel.Name = "MCLabel";
             this.MCLabel.Size = new System.Drawing.Size(44, 25);
             this.MCLabel.TabIndex = 9;
@@ -135,7 +138,7 @@
             this.NomLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NomLabel.AutoSize = true;
             this.NomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomLabel.Location = new System.Drawing.Point(773, 13);
+            this.NomLabel.Location = new System.Drawing.Point(779, 13);
             this.NomLabel.Name = "NomLabel";
             this.NomLabel.Size = new System.Drawing.Size(53, 25);
             this.NomLabel.TabIndex = 10;
@@ -146,7 +149,7 @@
             this.NiveauLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NiveauLabel.AutoSize = true;
             this.NiveauLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NiveauLabel.Location = new System.Drawing.Point(1076, 91);
+            this.NiveauLabel.Location = new System.Drawing.Point(1074, 91);
             this.NiveauLabel.Name = "NiveauLabel";
             this.NiveauLabel.Size = new System.Drawing.Size(73, 25);
             this.NiveauLabel.TabIndex = 11;
@@ -157,7 +160,7 @@
             this.ClasseLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ClasseLabel.AutoSize = true;
             this.ClasseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClasseLabel.Location = new System.Drawing.Point(1076, 13);
+            this.ClasseLabel.Location = new System.Drawing.Point(1082, 13);
             this.ClasseLabel.Name = "ClasseLabel";
             this.ClasseLabel.Size = new System.Drawing.Size(73, 25);
             this.ClasseLabel.TabIndex = 12;
@@ -176,6 +179,7 @@
             this.PvInput.Name = "PvInput";
             this.PvInput.Size = new System.Drawing.Size(297, 30);
             this.PvInput.TabIndex = 13;
+            this.PvInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MCInput
             // 
@@ -190,6 +194,7 @@
             this.MCInput.Name = "MCInput";
             this.MCInput.Size = new System.Drawing.Size(297, 30);
             this.MCInput.TabIndex = 14;
+            this.MCInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NiveauInput
             // 
@@ -204,129 +209,143 @@
             this.NiveauInput.Name = "NiveauInput";
             this.NiveauInput.Size = new System.Drawing.Size(297, 30);
             this.NiveauInput.TabIndex = 15;
+            this.NiveauInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ImageImportButton
             // 
             this.ImageImportButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImageImportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImageImportButton.Location = new System.Drawing.Point(12, 225);
             this.ImageImportButton.Name = "ImageImportButton";
-            this.ImageImportButton.Size = new System.Drawing.Size(319, 30);
+            this.ImageImportButton.Size = new System.Drawing.Size(323, 37);
             this.ImageImportButton.TabIndex = 16;
             this.ImageImportButton.Text = "Import";
             this.ImageImportButton.UseVisualStyleBackColor = true;
             this.ImageImportButton.Click += new System.EventHandler(this.ImageImportButton_Click);
             // 
-            // dons
+            // ArrayDons
             // 
-            this.dons.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dons.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dons.Location = new System.Drawing.Point(396, 310);
-            this.dons.Name = "dons";
-            this.dons.ReadOnly = true;
-            this.dons.Size = new System.Drawing.Size(512, 30);
-            this.dons.TabIndex = 21;
-            this.dons.Text = "Dons";
-            this.dons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ArrayDons.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ArrayDons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ArrayDons.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.ArrayDons.ColumnCount = 4;
+            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.96159F));
+            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.03841F));
+            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
+            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.ArrayDons.Controls.Add(this.CoutLabel, 3, 0);
+            this.ArrayDons.Controls.Add(this.ActionLabel, 2, 0);
+            this.ArrayDons.Controls.Add(this.EffetLabel, 1, 0);
+            this.ArrayDons.Controls.Add(this.DonsLabel, 0, 0);
+            this.ArrayDons.Controls.Add(this.CoutInput, 3, 1);
+            this.ArrayDons.Controls.Add(this.ActionInput, 2, 1);
+            this.ArrayDons.Controls.Add(this.NomDonsInput, 0, 1);
+            this.ArrayDons.Controls.Add(this.EffetInput, 1, 1);
+            this.ArrayDons.Location = new System.Drawing.Point(12, 290);
+            this.ArrayDons.Name = "ArrayDons";
+            this.ArrayDons.RowCount = 2;
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.98551F));
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.0145F));
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ArrayDons.Size = new System.Drawing.Size(1216, 139);
+            this.ArrayDons.TabIndex = 22;
             // 
-            // tableLayoutPanel1
+            // CoutLabel
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.96159F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.03841F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
-            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox4, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 346);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.47887F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.52113F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1256, 71);
-            this.tableLayoutPanel1.TabIndex = 22;
+            this.CoutLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CoutLabel.AutoSize = true;
+            this.CoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoutLabel.Location = new System.Drawing.Point(1096, 6);
+            this.CoutLabel.Name = "CoutLabel";
+            this.CoutLabel.Size = new System.Drawing.Size(63, 29);
+            this.CoutLabel.TabIndex = 32;
+            this.CoutLabel.Text = "Cout";
             // 
-            // richTextBox4
+            // ActionLabel
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(1089, 35);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(164, 32);
-            this.richTextBox4.TabIndex = 29;
-            this.richTextBox4.Text = "";
+            this.ActionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ActionLabel.AutoSize = true;
+            this.ActionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActionLabel.Location = new System.Drawing.Point(857, 6);
+            this.ActionLabel.Name = "ActionLabel";
+            this.ActionLabel.Size = new System.Drawing.Size(79, 29);
+            this.ActionLabel.TabIndex = 31;
+            this.ActionLabel.Text = "Action";
             // 
-            // richTextBox3
+            // EffetLabel
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(802, 35);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(281, 32);
-            this.richTextBox3.TabIndex = 28;
-            this.richTextBox3.Text = "";
+            this.EffetLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EffetLabel.AutoSize = true;
+            this.EffetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EffetLabel.Location = new System.Drawing.Point(459, 6);
+            this.EffetLabel.Name = "EffetLabel";
+            this.EffetLabel.Size = new System.Drawing.Size(61, 29);
+            this.EffetLabel.TabIndex = 30;
+            this.EffetLabel.Text = "Effet";
             // 
-            // richTextBox2
+            // DonsLabel
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(242, 35);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(554, 32);
-            this.richTextBox2.TabIndex = 27;
-            this.richTextBox2.Text = "";
+            this.DonsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DonsLabel.AutoSize = true;
+            this.DonsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonsLabel.Location = new System.Drawing.Point(79, 6);
+            this.DonsLabel.Name = "DonsLabel";
+            this.DonsLabel.Size = new System.Drawing.Size(69, 29);
+            this.DonsLabel.TabIndex = 23;
+            this.DonsLabel.Text = "Dons";
             // 
-            // richTextBox1
+            // CoutInput
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 35);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(233, 32);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.CoutInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoutInput.Location = new System.Drawing.Point(1044, 44);
+            this.CoutInput.Name = "CoutInput";
+            this.CoutInput.Size = new System.Drawing.Size(168, 91);
+            this.CoutInput.TabIndex = 29;
+            this.CoutInput.Text = "";
             // 
-            // label1
+            // ActionInput
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 29);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Prenom";
+            this.ActionInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActionInput.Location = new System.Drawing.Point(756, 44);
+            this.ActionInput.Name = "ActionInput";
+            this.ActionInput.Size = new System.Drawing.Size(281, 91);
+            this.ActionInput.TabIndex = 28;
+            this.ActionInput.Text = "";
             // 
-            // label2
+            // NomDonsInput
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(488, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 29);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Effet";
+            this.NomDonsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomDonsInput.Location = new System.Drawing.Point(4, 44);
+            this.NomDonsInput.Name = "NomDonsInput";
+            this.NomDonsInput.Size = new System.Drawing.Size(219, 91);
+            this.NomDonsInput.TabIndex = 26;
+            this.NomDonsInput.Text = "";
             // 
-            // label3
+            // EffetInput
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(903, 1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 29);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Action";
+            this.EffetInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EffetInput.Location = new System.Drawing.Point(230, 44);
+            this.EffetInput.Name = "EffetInput";
+            this.EffetInput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.EffetInput.Size = new System.Drawing.Size(519, 91);
+            this.EffetInput.TabIndex = 27;
+            this.EffetInput.Text = "";
             // 
-            // label4
+            // DonsAdd
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1139, 1);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 29);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Cout";
+            this.DonsAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DonsAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonsAdd.Location = new System.Drawing.Point(1234, 368);
+            this.DonsAdd.Name = "DonsAdd";
+            this.DonsAdd.Size = new System.Drawing.Size(39, 32);
+            this.DonsAdd.TabIndex = 23;
+            this.DonsAdd.Text = "+";
+            this.DonsAdd.UseCompatibleTextRendering = true;
+            this.DonsAdd.UseVisualStyleBackColor = true;
+            this.DonsAdd.Click += new System.EventHandler(this.DonsAdd_Click);
             // 
             // FormCaracterSheet
             // 
@@ -335,8 +354,8 @@
             this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 648);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.dons);
+            this.Controls.Add(this.DonsAdd);
+            this.Controls.Add(this.ArrayDons);
             this.Controls.Add(this.ImageImportButton);
             this.Controls.Add(this.NiveauInput);
             this.Controls.Add(this.MCInput);
@@ -357,8 +376,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PvInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MCInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NiveauInput)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.ArrayDons.ResumeLayout(false);
+            this.ArrayDons.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,16 +399,16 @@
         private System.Windows.Forms.NumericUpDown MCInput;
         private System.Windows.Forms.NumericUpDown NiveauInput;
         private System.Windows.Forms.Button ImageImportButton;
-        private System.Windows.Forms.TextBox dons;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel ArrayDons;
+        private System.Windows.Forms.Label DonsLabel;
+        private System.Windows.Forms.Label CoutLabel;
+        private System.Windows.Forms.Label ActionLabel;
+        private System.Windows.Forms.Label EffetLabel;
+        private System.Windows.Forms.RichTextBox ActionInput;
+        private System.Windows.Forms.RichTextBox NomDonsInput;
+        private System.Windows.Forms.RichTextBox EffetInput;
+        private System.Windows.Forms.RichTextBox CoutInput;
+        private System.Windows.Forms.Button DonsAdd;
     }
 }
 
