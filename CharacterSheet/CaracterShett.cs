@@ -34,7 +34,7 @@ namespace CharacterSheet
                 Image caracterImage = Image.FromFile(dialog.FileName);
 
 
-                caracterImage = resizeImage(caracterImage, new Size(215, 147));
+                caracterImage = resizeImage(caracterImage, new Size(319, 206));
 
                 imageCaracter.Image = caracterImage;
                 //Set the SizeMode to center the image.
