@@ -226,13 +226,13 @@
             // ArrayDons
             // 
             this.ArrayDons.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ArrayDons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ArrayDons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ArrayDons.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.ArrayDons.ColumnCount = 4;
             this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.96159F));
             this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.03841F));
             this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
-            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.ArrayDons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
             this.ArrayDons.Controls.Add(this.CoutLabel, 3, 0);
             this.ArrayDons.Controls.Add(this.ActionLabel, 2, 0);
             this.ArrayDons.Controls.Add(this.EffetLabel, 1, 0);
@@ -243,14 +243,15 @@
             this.ArrayDons.Controls.Add(this.EffetInput, 1, 1);
             this.ArrayDons.Location = new System.Drawing.Point(12, 290);
             this.ArrayDons.Name = "ArrayDons";
-            this.ArrayDons.RowCount = 2;
+            this.ArrayDons.RowCount = 3;
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.98551F));
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.0145F));
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.ArrayDons.Size = new System.Drawing.Size(1216, 139);
+            this.ArrayDons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ArrayDons.Size = new System.Drawing.Size(1216, 250);
             this.ArrayDons.TabIndex = 22;
             // 
             // CoutLabel
@@ -258,7 +259,7 @@
             this.CoutLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CoutLabel.AutoSize = true;
             this.CoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoutLabel.Location = new System.Drawing.Point(1096, 6);
+            this.CoutLabel.Location = new System.Drawing.Point(1094, 19);
             this.CoutLabel.Name = "CoutLabel";
             this.CoutLabel.Size = new System.Drawing.Size(63, 29);
             this.CoutLabel.TabIndex = 32;
@@ -269,7 +270,7 @@
             this.ActionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActionLabel.AutoSize = true;
             this.ActionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActionLabel.Location = new System.Drawing.Point(857, 6);
+            this.ActionLabel.Location = new System.Drawing.Point(853, 19);
             this.ActionLabel.Name = "ActionLabel";
             this.ActionLabel.Size = new System.Drawing.Size(79, 29);
             this.ActionLabel.TabIndex = 31;
@@ -280,7 +281,7 @@
             this.EffetLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EffetLabel.AutoSize = true;
             this.EffetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EffetLabel.Location = new System.Drawing.Point(459, 6);
+            this.EffetLabel.Location = new System.Drawing.Point(456, 19);
             this.EffetLabel.Name = "EffetLabel";
             this.EffetLabel.Size = new System.Drawing.Size(61, 29);
             this.EffetLabel.TabIndex = 30;
@@ -291,7 +292,7 @@
             this.DonsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DonsLabel.AutoSize = true;
             this.DonsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DonsLabel.Location = new System.Drawing.Point(79, 6);
+            this.DonsLabel.Location = new System.Drawing.Point(78, 19);
             this.DonsLabel.Name = "DonsLabel";
             this.DonsLabel.Size = new System.Drawing.Size(69, 29);
             this.DonsLabel.TabIndex = 23;
@@ -299,8 +300,8 @@
             // 
             // CoutInput
             // 
-            this.CoutInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoutInput.Location = new System.Drawing.Point(1044, 44);
+            this.CoutInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoutInput.Location = new System.Drawing.Point(1040, 70);
             this.CoutInput.Name = "CoutInput";
             this.CoutInput.Size = new System.Drawing.Size(168, 91);
             this.CoutInput.TabIndex = 29;
@@ -308,8 +309,8 @@
             // 
             // ActionInput
             // 
-            this.ActionInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActionInput.Location = new System.Drawing.Point(756, 44);
+            this.ActionInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActionInput.Location = new System.Drawing.Point(752, 70);
             this.ActionInput.Name = "ActionInput";
             this.ActionInput.Size = new System.Drawing.Size(281, 91);
             this.ActionInput.TabIndex = 28;
@@ -317,20 +318,20 @@
             // 
             // NomDonsInput
             // 
-            this.NomDonsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomDonsInput.Location = new System.Drawing.Point(4, 44);
+            this.NomDonsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomDonsInput.Location = new System.Drawing.Point(4, 70);
             this.NomDonsInput.Name = "NomDonsInput";
-            this.NomDonsInput.Size = new System.Drawing.Size(219, 91);
+            this.NomDonsInput.Size = new System.Drawing.Size(217, 91);
             this.NomDonsInput.TabIndex = 26;
             this.NomDonsInput.Text = "";
             // 
             // EffetInput
             // 
-            this.EffetInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EffetInput.Location = new System.Drawing.Point(230, 44);
+            this.EffetInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EffetInput.Location = new System.Drawing.Point(228, 70);
             this.EffetInput.Name = "EffetInput";
             this.EffetInput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.EffetInput.Size = new System.Drawing.Size(519, 91);
+            this.EffetInput.Size = new System.Drawing.Size(517, 91);
             this.EffetInput.TabIndex = 27;
             this.EffetInput.Text = "";
             // 
