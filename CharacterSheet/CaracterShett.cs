@@ -12,8 +12,10 @@ namespace CharacterSheet
 {
     public partial class FormCaracterSheet : Form
     {
+        private int indexDons = 1;
         public FormCaracterSheet()
         {
+
             InitializeComponent();
 
             this.NiveauInput.Controls[0].Visible = false;
@@ -45,6 +47,25 @@ namespace CharacterSheet
         public static Image resizeImage(Image imgToResize, Size size)
         {
             return (Image)(new Bitmap(imgToResize, size));
+        }
+
+        private void DonsAdd_Click(object sender, EventArgs e)
+        {
+            
+            addDonsArray();
+
+        }
+
+
+        private void addDonsArray()
+        {
+
+            this.indexDons++;
+            this.ArrayDons.RowCount++;
+
+            this.ArrayDons.Size = new System.Drawing.Size(912, this.ArrayDons.Size.Height + 80);
+
+
         }
     }
 }
